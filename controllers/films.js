@@ -29,4 +29,8 @@ router.delete("/:id", function(req, res){
   res.json(films)
 })
 
+router.get("/:id", function(req, res){
+  res.json(films[req.params.id])
+})
+
 module.exports = router
